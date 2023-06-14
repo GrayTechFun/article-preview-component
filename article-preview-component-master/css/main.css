@@ -1,0 +1,164 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e9eff6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35em;
+  height: 50em;
+  margin: auto;
+  margin-top: 8em;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.leftcol img {
+  width: 35em;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 1em 1em 0 0;
+}
+
+.rightcol img {
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+}
+
+.rightcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: #5d636a;
+  align-content: center;
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+.rightcol p {
+  color: #a0a4ae;
+  font-size: 1.6rem;
+  margin-left: 2em;
+  margin-top: -0.1em;
+  margin-bottom: 2em;
+}
+
+.bottom {
+  display: flex;
+  gap: 10em;
+}
+
+.profile {
+  display: flex;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+.share img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.name {
+  margin-top: -1.8em;
+  margin-left: 1.5em;
+}
+
+.name p {
+  margin-left: -0.1em;
+  margin-top: -1.3em;
+  font-size: 1.3rem;
+}
+
+.share {
+  margin-top: 1em;
+  width: 3em;
+  height: 3em;
+  background-color: #e9eff6;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.5em;
+}
+
+.replace {
+  margin-left: 7em;
+  width: 35em;
+  height: 7em;
+  background-color: #394458;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 0 0 1em 1em;
+  align-items: center;
+  display: none;
+}
+
+.replace img {
+  width: 2em;
+  height: 2em;
+}
+
+.social {
+  display: flex;
+  gap: 2em;
+}
+
+h4 {
+  color: #8491aa;
+  font-size: 1.3rem;
+}
+
+.share2 {
+  width: 3em;
+  height: 3em;
+  background-color: #5b6d89;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 3.5em;
+}
+
+.share2 img {
+  width: 1.5em;
+  height: 1.5em;
+  filter: brightness(0) invert(1);
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    height: 25em;
+    width: 60em;
+    flex-direction: row;
+    margin-top: 23em;
+  }
+
+  .leftcol img {
+    width: 25em;
+    height: 25em;
+    border-radius: 1em 0 0 1em;
+  }
+
+  .bottom {
+    margin-top: -2em;
+  }
+
+  .share:hover {
+    background-color: #5b6d89;
+  }
+
+  .share img:hover {
+    filter: brightness(0) invert(1);
+  }
+}
