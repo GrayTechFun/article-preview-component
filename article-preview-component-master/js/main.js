@@ -1,9 +1,10 @@
+const share = document.querySelector(".share");
 const replace = document.querySelector(".replace");
+const bottom = document.querySelector(".bottom");
+const shareImg = document.querySelector(".shareImg");
 
-const hover = document.querySelector(".bottom");
-
-const replaceItems = () => {
-  hover.innerHTML = replace.innerHTML;
+const console = () => {
+  shareImg.classList.add("changetoWhite");
 };
 
-hover.addEventListener("mouseover", replaceItems);
+share.addEventListener("click", console);

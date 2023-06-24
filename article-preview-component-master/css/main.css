@@ -17,7 +17,7 @@ body {
   margin: auto;
   margin-top: 8em;
   background-color: white;
-  border-radius: 1em;
+  border-radius: 1em 1em 0 0;
 }
 
 .leftcol img {
@@ -95,7 +95,7 @@ h5 {
 }
 
 .replace {
-  margin-left: 7em;
+  margin-left: 7.5em;
   width: 35em;
   height: 7em;
   background-color: #394458;
@@ -103,7 +103,7 @@ h5 {
   justify-content: space-around;
   border-radius: 0 0 1em 1em;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
 .replace img {
@@ -136,12 +136,34 @@ h4 {
   filter: brightness(0) invert(1);
 }
 
+.share:hover {
+  background-color: #5b6d89;
+}
+
+.changetoWhite {
+  filter: brightness(0) invert(1);
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 20px solid #394458;
+  margin-bottom: -9em;
+  margin-right: 7em;
+  visibility: hidden;
+}
+
 @media only screen and (min-width: 600px) {
   .wrapper {
     height: 25em;
     width: 60em;
     flex-direction: row;
     margin-top: 23em;
+    border-radius: 1em;
+    position: relative;
   }
 
   .leftcol img {
@@ -154,11 +176,14 @@ h4 {
     margin-top: -2em;
   }
 
-  .share:hover {
-    background-color: #5b6d89;
+  .replace {
+    margin-top: -15em;
+    margin-left: 40em;
+    position: absolute;
+    border-radius: 1em;
   }
 
-  .share img:hover {
-    filter: brightness(0) invert(1);
+  .arrow-down {
+    visibility: visible;
   }
 }
